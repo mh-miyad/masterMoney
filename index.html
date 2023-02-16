@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Money Master - Track Your Expense</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="text-center text-4xl font-bold" style="color: #31a5ac">
+          Money Master💰
+        </h1>
+      </div>
+    </header>
+    <main class="my-20 px-10">
+      <div class="flex justify-around md:flex-row flex-col text-center">
+        <section class="bg-slate-50 px-10 rounded-2xl shadow-lg shadow-black/40 py-20">
+          <img src="./img.png" class="w-full rounded-xl shadow-2xl shadow-black/40 hover:scale-105 transition-all " alt="" />
+        </section>
+        <section class="bg-gray-200 rounded-2xl shadow-lg shadow-black/40">
+          <div class="my-5 p-10">
+            <h2 class="text-center my-5 text-4xl font-bold uppercase">
+              Income
+            </h2>
+            <label for="income" class="block my-5 ">
+              <span class="text-2xl"> Income:</span>
+              <input
+                type="number"
+                min="0"
+                name="income"
+                id="income-input"
+                class="px-10 py-3"
+              />
+            </label>
+            <h2 class="text-center my-5 text-4xl font-bold uppercase">
+              Expenses
+            </h2>
+            <label for="food" class="block my-5 ">
+              <span class="text-2xl"> Food:</span>
+              <input
+                type="number"
+                min="0"
+                name="income"
+                id="food-input"
+                class="px-10 py-3"
+              />
+            </label>
+            <label for="rent" class="block my-5 ">
+              <span class="text-2xl"> Rent:</span>
+              <input
+                type="number"
+                min="0"
+                name="income"
+                id="rent-input"
+                class="px-10 py-3"
+              />
+            </label>
+            <label for="other" class="block my-5 ">
+              <span class="text-2xl"> Other:</span>
+              <input
+                type="number"
+                min="0"
+                name="income"
+                id="other-input"
+                class="px-10 py-3"
+              />
+            </label>
+            <button class="bg-blue-500 hover:bg-blue-600 rounded-md shadow-lg shadow-black/40 my-7 px-12 hover:px-11 hover:py-2.5 text-white font-bold py-3" id="calculate-btn">Calculate</button>
+            <h3 class="text-2xl font-bold">Total Expenses: <span id="total-expens" class="shadow  px-5 py-3 my-10
+               mx-5 "></span></h3>
+            <h3 class="text-2xl font-bold">Balance: <span id="balance" class="shadow  px-5 py-3 my-10
+               mx-5 "></span></h3>
+               <div class="my-5">
+                <label for="save" class="text-xl font-bold">Save: <input type="number" name="save" min="0" id="save-input" class="w-12 py-3 "> % <button class="px-10 bg-green-500 text-white font-semibold  shadow-lg shadow-black/40 py-2 rounded-md hover:bg-green-400" id="save-btn">Save</button></label>
+                <h2 class="text-2xl font-bold ">Saving  Balance: <span id="saving-blnc"></span></h2>
+                <h2 class="text-2xl font-bold ">Remaining Balance: <span id="remaining-blnc"></span></h2>
+               </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
